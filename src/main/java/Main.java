@@ -10,19 +10,11 @@ public class Main {
 
         String data[] = {""};
 
-//        SingletonRunner.main(data);
-//        PrototypeRunner.main(data);
-//        BuilderRunner.main(data);
-//        FactoryRunner.main(data);
-//        KorusProjectRunner.main(data);
-
-        String string = "SBBBUF";
-        String[] mas = {"SBBBUF", "RUSLAN", "151515"};
-
-
-        System.out.println(string);
-        System.out.println(mas[1]);
-
+        SingletonRunner.main(data);
+        PrototypeRunner.main(data);
+        BuilderRunner.main(data);
+        FactoryRunner.main(data);
+        KorusProjectRunner.main(data);
 
     }
 }
