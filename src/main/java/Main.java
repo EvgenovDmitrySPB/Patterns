@@ -3,6 +3,7 @@ import test.design.patterns.creational.builder.BuilderRunner;
 import test.design.patterns.creational.factory.FactoryRunner;
 import test.design.patterns.creational.prototype.PrototypeRunner;
 import test.design.patterns.creational.singleton.SingletonRunner;
+import test.design.patterns.structural.adapter.AdapterRunner;
 
 public class Main {
     public static void main(String[] args) {
@@ -15,6 +16,8 @@ public class Main {
         BuilderRunner.main(data);
         FactoryRunner.main(data);
         KorusProjectRunner.main(data);
+
+        AdapterRunner.main(data);
 
     }
 }
