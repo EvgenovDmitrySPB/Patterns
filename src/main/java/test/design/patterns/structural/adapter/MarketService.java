@@ -1,7 +1,7 @@
 package test.design.patterns.structural.adapter;
 
 public class MarketService {
-        public void buyProduct() {
+    public void buyProduct() {
         System.out.println("Buy an 100 apple");
     }
 
