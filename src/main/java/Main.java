@@ -8,6 +8,7 @@ import test.design.patterns.creational.prototype.PrototypeRunner;
 import test.design.patterns.creational.singleton.SingletonRunner;
 import test.design.patterns.structural.adapter.AdapterRunner;
 import test.design.patterns.structural.bridge.BridgeRunner;
+import test.design.patterns.structural.composite.CompositeRunner;
 
 @Log4j
 public class Main {
@@ -28,6 +29,6 @@ public class Main {
 
         AdapterRunner.main("******** pattern Adapter ****************");
         BridgeRunner.main("******** pattern Bridge ****************");
-
+        CompositeRunner.main("******** pattern Composite ****************");
     }
 }
