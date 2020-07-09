@@ -1,8 +1,15 @@
 package test.design.patterns.creational.builder;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class BuilderRunner {
-    public static void main(String[] args) {
-        System.out.println("******** pattern Builder ****************");
+
+    public static final Logger log = LogManager.getLogger(BuilderRunner.class);
+
+    public static void main(String args) {
+        log.info(args);
+
         CarBuilder builder = new CarBuilder();
         builder.reset();
 
@@ -23,6 +30,6 @@ public class BuilderRunner {
         System.out.println(homeCar);
         System.out.println(sportCar);
 
-        System.out.println("******** end of pattern Builder ****************");
+        log.info(args);
     }
 }
