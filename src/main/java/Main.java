@@ -1,4 +1,4 @@
-import lombok.extern.log4j.Log4j;
+import lombok.extern.log4j.Log4j2;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import test.design.patterns.creational.abstractFactory.KorusProjectRunner;
@@ -14,6 +14,7 @@ import test.design.patterns.structural.facade.FacadeRunner;
 import test.design.patterns.structural.flyweight.FlyWeightRunner;
 import test.design.patterns.structural.proxy.ProxyRunner;
 
+@Log4j2
 public class Main {
 
     public static final Logger log = LogManager.getLogger(Main.class);
