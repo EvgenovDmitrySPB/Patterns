@@ -10,8 +10,8 @@ import test.design.patterns.structural.adapter.AdapterRunner;
 import test.design.patterns.structural.bridge.BridgeRunner;
 import test.design.patterns.structural.composite.CompositeRunner;
 import test.design.patterns.structural.decorator.DecoratorRunner;
+import test.design.patterns.structural.facade.FacadeRunner;
 
-@Log4j
 public class Main {
 
     public static final Logger log = LogManager.getLogger(Main.class);
@@ -20,9 +20,7 @@ public class Main {
 
         log.info("Starting application the design patterns ...");
 
-        String data[] = {""};
-
-        SingletonRunner.main("******** pattern Sungleton ****************");
+        SingletonRunner.main("******** pattern Singleton ****************");
         PrototypeRunner.main("******** pattern Prototype ****************");
         BuilderRunner.main("******** pattern Builder ****************");
         FactoryRunner.main("******** pattern Factory ****************");
@@ -32,5 +30,6 @@ public class Main {
         BridgeRunner.main("******** pattern Bridge ****************");
         CompositeRunner.main("******** pattern Composite ****************");
         DecoratorRunner.main("******** pattern Decorator ****************");
+        FacadeRunner.main("******** pattern Facade ****************");
     }
 }

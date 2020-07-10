@@ -1,6 +1,9 @@
 package test.design.patterns.structural.decorator;
 
-public class EmployeeDecorator implements Employee{
+/**
+ * Wrapper.
+ */
+public class EmployeeDecorator implements Employee {
 
     private Employee employee;
 
