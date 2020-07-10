@@ -13,7 +13,7 @@ public class FacadeRunner {
 
     public static void main(String args) {
 
-        log.info(log);
+        log.info(args);
 
         Hr hr = new Hr();
         Director director = new Director();
@@ -33,6 +33,6 @@ public class FacadeRunner {
                 System.out.println("- " + current.getName() + " haven't a job");
             }
         }
-        log.info(log);
+        log.info(args);
     }
 }

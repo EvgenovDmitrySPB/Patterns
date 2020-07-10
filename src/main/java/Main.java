@@ -12,6 +12,7 @@ import test.design.patterns.structural.composite.CompositeRunner;
 import test.design.patterns.structural.decorator.DecoratorRunner;
 import test.design.patterns.structural.facade.FacadeRunner;
 import test.design.patterns.structural.flyweight.FlyWeightRunner;
+import test.design.patterns.structural.proxy.ProxyRunner;
 
 public class Main {
 
@@ -33,5 +34,6 @@ public class Main {
         DecoratorRunner.main("******** pattern Decorator ****************");
         FacadeRunner.main("******** pattern Facade ****************");
         FlyWeightRunner.main("******** pattern FlyWeight ****************");
+        ProxyRunner.main("******** pattern Proxy ****************");
     }
 }

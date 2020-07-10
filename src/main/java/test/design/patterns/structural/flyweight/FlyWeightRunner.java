@@ -9,7 +9,7 @@ import java.util.List;
 
 public class FlyWeightRunner {
 
-    public static final Logger log = LogManager.getLogger(FacadeRunner.class);
+    public static final Logger log = LogManager.getLogger(FlyWeightRunner.class);
 
     public static void main(String args) {
         log.info(args);
@@ -21,7 +21,7 @@ public class FlyWeightRunner {
         list.add(new Motorist("Nikolay Margin", 57, factory.getCar("lada")));
         list.add(new Motorist("Zed Epling", 57, factory.getCar("mercedes")));
 
-        for (Motorist motorist :list) {
+        for (Motorist motorist : list) {
             motorist.getCar().beep();
             motorist.getCar().move();
         }
