@@ -1,6 +1,7 @@
 import lombok.extern.log4j.Log4j2;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import test.design.patterns.behavioral.chain.ChainRunner;
 import test.design.patterns.creational.abstractFactory.KorusProjectRunner;
 import test.design.patterns.creational.builder.BuilderRunner;
 import test.design.patterns.creational.factory.FactoryRunner;
@@ -22,19 +23,21 @@ public class Main {
     public static void main(String[] args) {
 
         log.info("Starting application the design patterns ...");
+        int i = 0;
+        SingletonRunner.main(i++ + " ******** pattern Singleton ****************");
+        PrototypeRunner.main(i++ + " ******** pattern Prototype ****************");
+        BuilderRunner.main(i++ + " ******** pattern Builder ****************");
+        FactoryRunner.main(i++ + " ******** pattern Factory ****************");
+        KorusProjectRunner.main(i++ + " ******** pattern AbstractFactory ****************");
 
-        SingletonRunner.main("******** pattern Singleton ****************");
-        PrototypeRunner.main("******** pattern Prototype ****************");
-        BuilderRunner.main("******** pattern Builder ****************");
-        FactoryRunner.main("******** pattern Factory ****************");
-        KorusProjectRunner.main("******** pattern AbstractFactory ****************");
+        AdapterRunner.main(i++ + " ******** pattern Adapter ****************");
+        BridgeRunner.main(i++ + " ******** pattern Bridge ****************");
+        CompositeRunner.main(i++ + " ******** pattern Composite ****************");
+        DecoratorRunner.main(i++ + " ******** pattern Decorator ****************");
+        FacadeRunner.main(i++ + " ******** pattern Facade ****************");
+        FlyWeightRunner.main(i++ + " ******** pattern FlyWeight ****************");
+        ProxyRunner.main(i++ + " ******** pattern Proxy ****************");
 
-        AdapterRunner.main("******** pattern Adapter ****************");
-        BridgeRunner.main("******** pattern Bridge ****************");
-        CompositeRunner.main("******** pattern Composite ****************");
-        DecoratorRunner.main("******** pattern Decorator ****************");
-        FacadeRunner.main("******** pattern Facade ****************");
-        FlyWeightRunner.main("******** pattern FlyWeight ****************");
-        ProxyRunner.main("******** pattern Proxy ****************");
+        ChainRunner.main(i++ + " ******** pattern Chain ****************");
     }
 }
