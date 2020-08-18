@@ -2,6 +2,7 @@ import lombok.extern.log4j.Log4j2;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import test.design.patterns.behavioral.chain.ChainRunner;
+import test.design.patterns.behavioral.command.CommandRunner;
 import test.design.patterns.creational.abstractFactory.KorusProjectRunner;
 import test.design.patterns.creational.builder.BuilderRunner;
 import test.design.patterns.creational.factory.FactoryRunner;
@@ -39,5 +40,6 @@ public class Main {
         ProxyRunner.main(i++ + " ******** pattern Proxy ****************");
 
         ChainRunner.main(i++ + " ******** pattern Chain ****************");
+        CommandRunner.main(i++ + " ******** pattern Command ****************");
     }
 }
