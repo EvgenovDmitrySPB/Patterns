@@ -1,18 +1,17 @@
 package test.design.patterns.behavioral.iterator;
 
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 
 import java.util.List;
 
 @Data
-public class FriendIterator implements Iterator{
+public class FriendIterator implements Iterator {
 
     private int index;
-    private List<Friend> friends;
+    private List friends;
 
-    public FriendIterator(List<Friend> friends) {
+    public FriendIterator(List friends) {
         this.friends = friends;
     }
 
@@ -23,7 +22,7 @@ public class FriendIterator implements Iterator{
 
     @Override
     public boolean hasNext() {
-        if (index < friends.size()){
+        if (index < friends.size()) {
             return true;
         }
         return false;

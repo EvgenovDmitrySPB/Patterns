@@ -6,12 +6,12 @@ import lombok.Data;
 import java.util.List;
 
 @Data
-public class FriendIteratorReverse implements Iterator{
+public class FriendIteratorReverse implements Iterator {
 
     private int index;
-    private List<Friend> friends;
+    private List friends;
 
-    public FriendIteratorReverse(List<Friend> friends) {
+    public FriendIteratorReverse(List friends) {
         this.friends = friends;
     }
 
@@ -24,7 +24,7 @@ public class FriendIteratorReverse implements Iterator{
 
     @Override
     public boolean hasNext() {
-        if ((friends.size() - index - 1) >= 0){
+        if ((friends.size() - index - 1) >= 0) {
             return true;
         }
         return false;

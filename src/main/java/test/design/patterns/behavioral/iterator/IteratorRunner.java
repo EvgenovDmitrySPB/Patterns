@@ -24,7 +24,7 @@ public class IteratorRunner {
         FacebookFriends facebookFriends = new FacebookFriends("My list", list);
 
         //по очереди используем 2 итератора
-        for (int i=1;i<=2;i++){
+        for (int i=1;i<3;i++){
             iterator = facebookFriends.createIterator(i);
 
             while (iterator.hasNext()){
