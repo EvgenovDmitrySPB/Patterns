@@ -5,6 +5,7 @@ import test.design.patterns.behavioral.chain.ChainRunner;
 import test.design.patterns.behavioral.command.CommandRunner;
 import test.design.patterns.behavioral.iterator.IteratorRunner;
 import test.design.patterns.behavioral.mediator.MediatorRunner;
+import test.design.patterns.behavioral.memento.MementoRunner;
 import test.design.patterns.creational.abstractFactory.KorusProjectRunner;
 import test.design.patterns.creational.builder.BuilderRunner;
 import test.design.patterns.creational.factory.FactoryRunner;
@@ -45,5 +46,6 @@ public class Main {
         CommandRunner.main(i++ + " ******** pattern Command ****************");
         IteratorRunner.main(i++ + " ******** pattern Iterator ****************");
         MediatorRunner.main(i++ + " ******** pattern Mediator ****************");
+        MementoRunner.main(i++ + " ******** pattern Memento ****************");
     }
 }
