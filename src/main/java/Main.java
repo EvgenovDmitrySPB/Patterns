@@ -7,6 +7,7 @@ import test.design.patterns.behavioral.iterator.IteratorRunner;
 import test.design.patterns.behavioral.mediator.MediatorRunner;
 import test.design.patterns.behavioral.memento.MementoRunner;
 import test.design.patterns.behavioral.observer.ObserverRunner;
+import test.design.patterns.behavioral.state.StateRunner;
 import test.design.patterns.creational.abstractFactory.KorusProjectRunner;
 import test.design.patterns.creational.builder.BuilderRunner;
 import test.design.patterns.creational.factory.FactoryRunner;
@@ -22,9 +23,6 @@ import test.design.patterns.structural.proxy.ProxyRunner;
 
 @Log4j2
 public class Main {
-
-    public static final Logger log = LogManager.getLogger(Main.class);
-
     public static void main(String[] args) {
 
         log.info("Starting application the design patterns ...");
@@ -49,5 +47,6 @@ public class Main {
         MediatorRunner.main(i++ + " ******** pattern Mediator ****************");
         MementoRunner.main(i++ + " ******** pattern Memento ****************");
         ObserverRunner.main(i++ + " ******** pattern Observer ****************");
+        StateRunner.main(i++ + " ******** pattern State ****************");
     }
 }
