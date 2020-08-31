@@ -2,7 +2,6 @@ package test.design.patterns.behavioral.memento;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import test.design.patterns.behavioral.mediator.MediatorRunner;
 
 import java.math.BigDecimal;
 import java.util.Calendar;
@@ -16,14 +15,14 @@ public class MementoRunner {
         log.info(args);
 
         Calendar calendar = new GregorianCalendar(2009, 2, 25);
-        Work work = new Work(calendar.getTime(), "Ivan Shishkov", "IEA", "Moscow, elabush street, 20", BigDecimal.valueOf(15000));
+        Work work = new Work(calendar.getTime(), "Ivan Shishkov", "IEA", "Moscow, Elabush street, 20", BigDecimal.valueOf(15000));
 
         System.out.println("Save hystory wirh first work: " + work.toString());
         Save save1 = work.save();
 
         System.out.println("Change work #1");
 
-        calendar.set(2015,5,12);
+        calendar.set(2015, 5, 12);
 
         work.setDateStart(calendar.getTime());
         work.setCompany("AvasProm");
@@ -41,7 +40,7 @@ public class MementoRunner {
 
         System.out.println("Change work #2");
 
-        calendar.set(2018,3,04);
+        calendar.set(2018, 3, 04);
 
         work.setDateStart(calendar.getTime());
         work.setCompany("Uzmoto");
