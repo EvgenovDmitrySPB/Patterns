@@ -8,6 +8,7 @@ import test.design.patterns.behavioral.mediator.MediatorRunner;
 import test.design.patterns.behavioral.memento.MementoRunner;
 import test.design.patterns.behavioral.observer.ObserverRunner;
 import test.design.patterns.behavioral.state.StateRunner;
+import test.design.patterns.behavioral.strategy.StrategyRunner;
 import test.design.patterns.creational.abstractFactory.KorusProjectRunner;
 import test.design.patterns.creational.builder.BuilderRunner;
 import test.design.patterns.creational.factory.FactoryRunner;
@@ -48,5 +49,6 @@ public class Main {
         MementoRunner.main(i++ + " ******** pattern Memento ****************");
         ObserverRunner.main(i++ + " ******** pattern Observer ****************");
         StateRunner.main(i++ + " ******** pattern State ****************");
+        StrategyRunner.main(i++ + " ******** pattern State ****************");
     }
 }
